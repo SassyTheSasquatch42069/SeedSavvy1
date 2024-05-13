@@ -23,5 +23,12 @@
     <string name="register">Register</string>
     <string name="back">Back</string>
 
-
+<!--    Welcome Page -->
+    <string name="welcome_txt1">Welcome to the club!</string>
+    <string name="welcome_txt2">We present to you the ultimate tool for growers</string>
+    <string name="welcome_txt3">Our app is here to help you cultivate and organize your plants effortlessly</string>
+    <string name="welcome_txt4">With customizable categories and easy-to-use inventory management</string>
+    <string name="welcome_txt5">You can create your own personalized system to track every plant in your collection</string>
+    <string name="welcome_txt6">Say goodbye to the chaos of gardening and hello to a streamlined approach to nurturing your green space</string>
+    <string name="welcome_txt7">Lets get Growing !!!</string>
 </resources>
