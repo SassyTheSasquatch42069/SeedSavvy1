@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Seed-Savvy</string>
+    <string name="app_logo">App Logo</string>
+    <string name="name_txt">Username</string>
+    <string name="password_txt">Password</string>
+    <string name="switch_txt">Show Password</string>
+    <string name="click_login">Login</string>
+    <string name="click_create">Create</string>
+    <string name="john">John</string>
+    <string name="jane">Jane</string>
 </resources>
