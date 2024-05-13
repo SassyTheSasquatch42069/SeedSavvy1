@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#17B757</color>
+    <color name="porsche">#DFAD62</color>
+    <color name="welcome_background">#37C26F</color>
+    <color name="welcome_button">#17B757</color>
+    <color name="menu_header">#17B757</color>
+
 </resources>
