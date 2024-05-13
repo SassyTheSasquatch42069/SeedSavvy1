@@ -7,13 +7,94 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/login_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="112dp"
+        android:contentDescription="@string/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo" />
+
+    <EditText
+        android:autofillHints="Jane"
+        android:id="@+id/Name_txt"
+        android:hint="@string/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/password_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_logo" />
+
+    <EditText
+        android:autofillHints="password"
+        android:id="@+id/password_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/show_password_switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name_txt" />
+
+    <RadioButton
+
+        android:id="@+id/show_password_switch"
+        android:layout_width="196dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/switch_txt"
+        android:text="@string/switch_txt"
+        app:layout_constraintBottom_toTopOf="@+id/Login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt" />
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/click_login"
+        app:layout_constraintBottom_toTopOf="@+id/Create_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_password_switch" />
+
+    <Button
+        android:id="@+id/Create_button"
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/click_create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Login_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
