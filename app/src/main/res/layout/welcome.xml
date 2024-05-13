@@ -159,7 +159,7 @@
                 android:backgroundTint="@color/green"
                 android:text="@string/welcome_txt7"
                 android:textColor="#311B92"
-                android:layout_margin="40dp"/>
+                android:layout_margin="100dp"/>
 
 
         </LinearLayout>
