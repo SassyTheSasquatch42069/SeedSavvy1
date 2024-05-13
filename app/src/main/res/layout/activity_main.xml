@@ -18,27 +18,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/app_logo" />
+        app:srcCompat="@drawable/app_logo"
+        tools:ignore="ImageContrastCheck" />
 
     <EditText
-        android:autofillHints="Jane"
         android:id="@+id/Name_txt"
-        android:hint="@string/name_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="101dp"
         android:layout_marginTop="72dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="23dp"
+        android:autofillHints="Jane"
         android:ems="10"
+        android:hint="@string/name_txt"
         android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
         app:layout_constraintBottom_toTopOf="@+id/password_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_logo" />
 
     <EditText
-        android:autofillHints="password"
         android:id="@+id/password_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,18 +48,22 @@
         android:layout_marginTop="23dp"
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="7dp"
+        android:autofillHints="password"
         android:ems="10"
+        android:hint="@string/password_txt"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/show_password_switch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/Name_txt"
+        tools:ignore="TextContrastCheck" />
 
     <RadioButton
 
         android:id="@+id/show_password_switch"
         android:layout_width="196dp"
-        android:layout_height="33dp"
+        android:layout_height="48dp"
         android:layout_marginStart="145dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="70dp"
