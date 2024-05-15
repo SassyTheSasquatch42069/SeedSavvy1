@@ -61,9 +61,15 @@
     <string name="item_season">Seasons</string>
     <string name="item_climate">Climate</string>
 
-    <!--    Add Item-->
+    <!--    View List-->
     <string name="list_header">View List:</string>
     <string name="select_category">Select a Category</string>
     <string name="Search">search item:</string>
+
+    <!--    Achievements-->
+    <string name="achievements_header">achievements:</string>
+    <string name="firstAchievement">Starter - Add your first item</string>
+    <string name="secondAchievement">Collector - Add 3 Items to the App</string>
+    <string name="thirdAchievement">Packrat - Add 10 Items to the App</string>
 
 </resources>

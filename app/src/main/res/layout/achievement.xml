@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/achievements_header"
+            android:orientation="vertical"
+            android:padding="66dp">
+
+            <!-- RelativeLayout to position TextView and ImageView -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/editTextText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:text="@string/achievements_header"
+                    android:textSize="35sp"
+                    tools:ignore="TextSizeCheck" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Insert Image -->
+            <Button
+                android:id="@+id/cat_img_click"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/achievements_header"
+                android:layout_margin="50dp"
+                android:text="@string/BackButton"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+
+            <!-- First Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+
+                <!-- Second Item -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/bronze">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/firstAchievement"
+                        android:textSize="26sp" />
+
+                    <ImageView
+                        android:id="@+id/item_click_2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="16dp"
+                        android:contentDescription="@string/app_logo"
+                        app:srcCompat="@drawable/bronze"
+                        tools:ignore="ImageContrastCheck"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!-- Second Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Second Item -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/secondAchievement"
+                        android:layout_marginTop="30dp"
+                        android:textSize="26sp" />
+
+                    <ImageView
+                        android:id="@+id/category_click_4"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="16dp"
+                        android:contentDescription="@string/app_logo"
+                        app:srcCompat="@drawable/silver"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Third Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- third Item -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thirdAchievement"
+                        android:layout_marginTop="30dp"
+                        android:textSize="26sp" />
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="36dp"
+                        android:contentDescription="@string/app_logo"
+                        app:srcCompat="@drawable/gold"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
