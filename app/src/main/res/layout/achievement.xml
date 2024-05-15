@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
-            <!-- Insert Image -->
+            <!-- Back Button -->
             <Button
                 android:id="@+id/cat_img_click"
                 android:layout_width="250dp"
