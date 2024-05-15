@@ -77,5 +77,11 @@
     <string name="progress_bar">Progress Bar</string>
     <string name="num">no.</string>
 
+    <!--    Seasons-->
+    <string name="season_header">Season Tracker</string>
+    <string name="item_tracker">Item Tracker</string>
+    <string name="category_tracker">Category Tracker</string>
+    <string name="season_yield">Season Yield</string>
+
 
 </resources>

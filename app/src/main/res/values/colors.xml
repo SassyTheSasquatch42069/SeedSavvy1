@@ -13,4 +13,5 @@
     <color name="list_header">#FF560E</color>
     <color name="achievements_header">#A125DB</color>
     <color name="goal_header">#F69400</color>
+    <color name="season_header">#46AA6E</color>
 </resources>
