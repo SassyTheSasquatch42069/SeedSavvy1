@@ -1,4 +1,5 @@
 <resources>
+    <!--    Login Page-->
     <string name="app_name">Seed-Savvy</string>
     <string name="app_logo">App Logo</string>
     <string name="name_txt">Username</string>
@@ -9,8 +10,6 @@
     <string name="john">John</string>
     <string name="jane">Jane</string>
     <string name="BackButton">Back</string>
-
-    <!--    Login Page-->
 
 <!--    Registration Page-->
     <string name="username">Username</string>
@@ -53,5 +52,13 @@
     <string name="cate_date">Date Created</string>
     <string name="cat_img">Insert Image</string>
     <string name="create_cat">Create Category</string>
+
+    <!--    Add Item-->
+    <string name="item_header">Add Item:</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_description">Description</string>
+    <string name="item_date">Date</string>
+    <string name="item_season">Seasons</string>
+    <string name="item_climate">Climate</string>
 
 </resources>
