@@ -72,4 +72,10 @@
     <string name="secondAchievement">Collector - Add 3 Items to the App</string>
     <string name="thirdAchievement">Packrat - Add 10 Items to the App</string>
 
+    <!--    Goal-->
+    <string name="goal_header">Goal:</string>
+    <string name="progress_bar">Progress Bar</string>
+    <string name="num">no.</string>
+
+
 </resources>
