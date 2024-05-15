@@ -96,7 +96,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/create_category"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
 
@@ -120,7 +120,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/add_icon"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -152,7 +152,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/view_list"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
 
@@ -176,7 +176,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/achievements"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -208,7 +208,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/goal"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
 
@@ -232,7 +232,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/seasons"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -264,7 +264,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/journal"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
 
@@ -288,7 +288,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/resources"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -319,7 +319,7 @@
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
                         android:contentDescription="@string/app_logo"
-                        app:srcCompat="@drawable/app_logo"
+                        app:srcCompat="@drawable/logout"
                         tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
