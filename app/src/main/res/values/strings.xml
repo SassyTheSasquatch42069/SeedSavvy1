@@ -32,7 +32,20 @@
     <string name="welcome_txt5">You can create your own personalized system to track every plant in your collection</string>
     <string name="welcome_txt6">Say goodbye to the chaos of gardening and hello to a streamlined approach to nurturing your green space</string>
     <string name="welcome_txt7">Lets get Growing !!!</string>
-    
+
+    <!--    Main Menu-->
+    <string name="main_menu_header">Seed-Savvy</string>
+    <string name="cat_click">Create Category</string>
+    <string name="item_click">Add Item</string>
+    <string name="list_click">View List</string>
+    <string name="achieve_click">Achievements</string>
+    <string name="goal_click">Goals</string>
+    <string name="seasons_click">Season Tracker</string>
+    <string name="resource_click">Resources</string>
+    <string name="journal_click">Journal</string>
+    <string name="setting_click">Setting</string>
+    <string name="logout">Logout</string>
+
 <!--    Create Category-->
     <string name="category_header">Create Category:</string>
     <string name="cat_name">Category Name</string>
@@ -40,8 +53,5 @@
     <string name="cate_date">Date Created</string>
     <string name="cat_img">Insert Image</string>
     <string name="create_cat">Create Category</string>
-
-
-
 
 </resources>
