@@ -8,7 +8,9 @@
     <string name="click_create">Create</string>
     <string name="john">John</string>
     <string name="jane">Jane</string>
-<!--    Login Page-->
+    <string name="BackButton">Back</string>
+
+    <!--    Login Page-->
 
 <!--    Registration Page-->
     <string name="username">Username</string>
@@ -21,7 +23,6 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="register">Register</string>
-    <string name="back">Back</string>
 
 <!--    Welcome Page -->
     <string name="welcome_txt1">Welcome to the club!</string>
@@ -31,4 +32,16 @@
     <string name="welcome_txt5">You can create your own personalized system to track every plant in your collection</string>
     <string name="welcome_txt6">Say goodbye to the chaos of gardening and hello to a streamlined approach to nurturing your green space</string>
     <string name="welcome_txt7">Lets get Growing !!!</string>
+    
+<!--    Create Category-->
+    <string name="category_header">Create Category:</string>
+    <string name="cat_name">Category Name</string>
+    <string name="cat_goal">Goal</string>
+    <string name="cate_date">Date Created</string>
+    <string name="cat_img">Insert Image</string>
+    <string name="create_cat">Create Category</string>
+
+
+
+
 </resources>
