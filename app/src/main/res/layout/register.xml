@@ -24,11 +24,13 @@
             android:orientation="vertical">
 
             <ImageView
-                android:contentDescription="register_image"
                 android:id="@+id/imageView"
                 android:layout_width="277dp"
                 android:layout_height="250dp"
                 android:layout_margin="62dp"
+                android:clickable="true"
+                android:onClick="onImageViewClicked"
+                android:contentDescription="register_image"
                 app:srcCompat="@drawable/add_image"
                 tools:ignore="HardcodedText" />
 
