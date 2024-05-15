@@ -67,7 +67,7 @@
     <string name="Search">search item:</string>
 
     <!--    Achievements-->
-    <string name="achievements_header">achievements:</string>
+    <string name="achievements_header">Achievements:</string>
     <string name="firstAchievement">Starter - Add your first item</string>
     <string name="secondAchievement">Collector - Add 3 Items to the App</string>
     <string name="thirdAchievement">Packrat - Add 10 Items to the App</string>
