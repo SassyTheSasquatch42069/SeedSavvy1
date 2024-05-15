@@ -10,4 +10,6 @@
     <color name="menu_header">#17B757</color>
     <color name="Yellow">#E8E02D</color>
     <color name="item_header">#BCF3D2</color>
+    <color name="list_header">#FF560E</color>
+    <color name="achievements_header">#A125DB</color>
 </resources>
