@@ -139,7 +139,7 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/grey"
-                android:text="@string/back"
+                android:text="@string/BackButton"
                 android:textColor="#283593" />
 
         </LinearLayout>

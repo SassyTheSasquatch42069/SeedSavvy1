@@ -25,11 +25,12 @@
 
             <TextView
                 android:id="@+id/editTextText"
-                android:layout_width="285dp"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="@string/category_header"
-                android:textSize="35dp" />
+                android:textSize="35sp"
+                tools:ignore="TextSizeCheck" />
         </LinearLayout>
     </ScrollView>
 
@@ -48,51 +49,87 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <!-- Username -->
+            <!-- Category Name -->
             <EditText
                 android:id="@+id/category_name_EditText"
-                android:layout_width="250dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:hint="@string/username"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/cat_name"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:minHeight="48dp"
                 android:textColorHint="#546E7A"
-                tools:ignore="Autofill" />
+                android:textSize="25sp"
+                tools:ignore="Autofill,TextSizeCheck" />
 
-            <!-- Name -->
+            <!-- Category Goal -->
             <EditText
 
                 android:id="@+id/nameEditText"
-                android:layout_width="250dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/user_name"
+                android:hint="@string/cat_goal"
                 android:minHeight="48dp"
                 android:inputType="text"
+                android:layout_margin="20dp"
                 android:layout_gravity="center"
-                android:textColorHint="#546E7A" />
+                android:textColorHint="#546E7A"
+                android:importantForAutofill="no"
+                android:textSize="25sp"/>
 
-            <!-- Surname -->
+            <!-- Date created -->
             <EditText
                 android:id="@+id/surnameEditText"
-                android:layout_width="250dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/user_surname"
+                android:hint="@string/cate_date"
                 android:minHeight="48dp"
                 tools:ignore="TextContrastCheck"
                 android:inputType="text"
+                android:layout_margin="20dp"
                 android:layout_gravity="center"
-                android:textColorHint="#546E7A" />
+                android:textColorHint="#546E7A"
+                android:importantForAutofill="no"
+                android:textSize="25sp"/>
 
-            <!-- Password -->
-            <EditText
-                android:id="@+id/password1"
+            <!-- Insert Image -->
+            <Button
+                android:id="@+id/cat_img_click"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:hint="@string/password"
-                android:inputType="textPassword"
+                android:backgroundTint="@color/black"
+                android:layout_margin="50dp"
+                android:text="@string/cat_img"
                 android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+            <!-- Insert Image -->
+            <Button
+                android:id="@+id/create_cat_click"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Yellow"
+                android:minHeight="48dp"
+                android:text="@string/create_cat"
+                android:textColor="#795548"
+                android:textColorHint="#546E7A" />
+
+            <Button
+                android:id="@+id/back_button_click"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="80dp"
+                android:backgroundTint="@color/grey"
+                android:minHeight="48dp"
+                android:text="@string/BackButton"
+                android:textColor="#283593"
                 android:textColorHint="#546E7A" />
         </LinearLayout>
     </ScrollView>
