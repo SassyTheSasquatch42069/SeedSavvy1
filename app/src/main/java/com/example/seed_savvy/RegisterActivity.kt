@@ -1,5 +1,4 @@
 package com.example.seed_savvy
-// RegistrationActivity.kt
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -7,8 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-import com.example.seed_savvy.R
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -31,31 +30,25 @@ class RegisterActivity : AppCompatActivity() {
         val goBackButton = findViewById<Button>(R.id.goBackButton)
 
         registerButton.setOnClickListener {
-            val username = usernameEditText.text.toString()
-            val password = password1EditText.text.toString()
-            val name = nameEditText.text.toString()
-            val surname = surnameEditText.text.toString()
-            val age = ageEditText.text.toString()
-            val gender = if (maleRadioButton.isChecked) "Male" else "Female"
-
-            // Save user information to SharedPreferences
-            val editor = sharedPreferences.edit()
-            editor.putString("username", username)
-            editor.putString("password", password)
-            editor.putString("name", name)
-            editor.putString("surname", surname)
-            editor.putString("age", age)
-            editor.putString("gender", gender)
-            editor.apply()
-
-            // Navigate back to login page
-            setContentView(R.layout.activity_main)
+            // Your registration logic
+            startActivity(Intent(this, MainActivity::class.java))
+            finish() // Optional: Close current activity
         }
 
-        goBackButton.setOnClickListener {
-            // Navigate back to login page
-            setContentView(R.layout.activity_main)
+        // Handling back button press using OnBackPressedCallback
+        val callback = object : OnBackPressedCallback(true /* enabled by default */) {
+            override fun handleOnBackPressed() {
+                // Navigate back to login page
+                startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
+                finish() // Optional: Close current activity
+            }
         }
+
+        onBackPressedDispatcher.addCallback(this, callback)
+
+        // Disable the callback if needed
+        // callback.isEnabled = false
     }
 }
+
 
