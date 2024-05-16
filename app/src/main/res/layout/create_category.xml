@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,35 +24,44 @@
             android:orientation="vertical"
             android:padding="66dp">
 
-            <TextView
-                android:id="@+id/editTextText"
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="@string/category_header"
-                android:textSize="35sp"
-                tools:ignore="TextSizeCheck" />
+            <!-- RelativeLayout to position TextView and ImageView -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/category_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:text="@string/category_header"
+                    android:textSize="35sp"
+                    tools:ignore="TextSizeCheck" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="709dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <!-- Category Name -->
             <EditText
-                android:id="@+id/category_name_EditText"
+                android:id="@+id/category_Nametxt"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -68,7 +78,7 @@
             <!-- Category Goal -->
             <EditText
 
-                android:id="@+id/nameEditText"
+                android:id="@+id/category_Goaltxt"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/cat_goal"
@@ -82,7 +92,7 @@
 
             <!-- Date created -->
             <EditText
-                android:id="@+id/surnameEditText"
+                android:id="@+id/category_Datetxt"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/cate_date"
@@ -97,7 +107,7 @@
 
             <!-- Insert Image -->
             <Button
-                android:id="@+id/cat_img_click"
+                android:id="@+id/category_Image"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -106,7 +116,37 @@
                 android:text="@string/cat_img"
                 android:minHeight="48dp"
                 android:textColorHint="#546E7A" />
-            <!-- Insert Image -->
+            <!-- Date created -->
+            <EditText
+                android:id="@+id/category_Seasonstxt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/item_season"
+                android:minHeight="48dp"
+                tools:ignore="TextContrastCheck"
+                android:inputType="text"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:textColorHint="#546E7A"
+                android:importantForAutofill="no"
+                android:textSize="25sp"/>
+
+            <!-- Date created -->
+            <EditText
+                android:id="@+id/category_Climatetxt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/item_climate"
+                android:minHeight="48dp"
+                tools:ignore="TextContrastCheck"
+                android:inputType="text"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:textColorHint="#546E7A"
+                android:importantForAutofill="no"
+                android:textSize="25sp"/>
+
+            <!-- Create Category Button -->
             <Button
                 android:id="@+id/create_cat_click"
                 android:layout_width="250dp"
