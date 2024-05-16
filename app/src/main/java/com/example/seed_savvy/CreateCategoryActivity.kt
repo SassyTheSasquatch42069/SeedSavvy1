@@ -18,9 +18,9 @@ class CreateCategoryActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("CategoryPrefs", Context.MODE_PRIVATE)
 
-        val categoryNameEditText = findViewById<EditText>(R.id.category_name)
-        val categoryGoalEditText = findViewById<EditText>(R.id.category_goal)
-        val categoryDateEditText = findViewById<EditText>(R.id.date_created)
+        val categoryNameEditText = findViewById<EditText>(R.id.category_Nametxt)
+        val categoryGoalEditText = findViewById<EditText>(R.id.category_Goaltxt)
+        val categoryDateEditText = findViewById<EditText>(R.id.category_Datetxt)
         val saveCategoryButton = findViewById<Button>(R.id.create_cat_click)
         val backButton = findViewById<Button>(R.id.back_button_click)
 
