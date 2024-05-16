@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.seed_savvy.RegisterActivity
 
@@ -32,18 +33,28 @@ class MainActivity : AppCompatActivity() {
             val enteredUsername = usernameEditText.text.toString()
             val enteredPassword = passwordEditText.text.toString()
 
-            if (savedUsername == enteredUsername && savedPassword == enteredPassword) {
-                // Login successful, navigate to homepage
-                setContentView(R.layout.main_menu)
+            if (enteredUsername.isNotEmpty() && enteredPassword.isNotEmpty()) {
+                if (savedUsername == enteredUsername && savedPassword == enteredPassword) {
+                    // Login successful, navigate to homepage
+                    Toast.makeText(this, "Login Successfully", Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this, MainMenuActivity::class.java))
+                } else {
+                    // Login failed, show error message or handle accordingly
+                    Toast.makeText(this, "Invalid Username or Password", Toast.LENGTH_LONG).show()
+                }
             } else {
-                // Login failed, show error message or handle accordingly
+                // Username or password is empty, show error message
+                Toast.makeText(this, "Please enter Username and Password", Toast.LENGTH_LONG).show()
             }
         }
 
+
+
         createButton.setOnClickListener {
 
+
             // Navigate to registration page
-            setContentView(R.layout.register)
+            startActivity(Intent(this, RegisterActivity::class.java))
 
         }
     }
