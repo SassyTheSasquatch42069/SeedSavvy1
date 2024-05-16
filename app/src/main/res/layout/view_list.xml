@@ -48,6 +48,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <TextView
+                android:id="@+id/category_title"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:text="@string/cat_name"
+                android:textSize="25sp"
+                tools:ignore="TextSizeCheck" />
             <!-- Insert Image -->
             <Button
                 android:id="@+id/cat_img_click"
