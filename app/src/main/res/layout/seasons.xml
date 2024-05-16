@@ -94,6 +94,14 @@
                         android:text="@string/category_tracker"
                         android:textSize="26sp" />
 <!--pie chart 1-->
+                    <ImageView
+                        android:id="@+id/category_tracker"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="16dp"
+                        android:contentDescription="@string/app_logo"
+                        app:srcCompat="@drawable/construction"
+                        tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -122,6 +130,14 @@
                         android:textSize="26sp" />
 
 <!--                    pie chart 2-->
+                    <ImageView
+                        android:id="@+id/item_tracker"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="16dp"
+                        android:contentDescription="@string/app_logo"
+                        app:srcCompat="@drawable/construction"
+                        tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
 
 
@@ -149,6 +165,14 @@
                         android:textSize="26sp" />
 
 <!--                    pie chart 3-->
+                    <ImageView
+                        android:id="@+id/season_yield"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="16dp"
+                        android:contentDescription="@string/app_logo"
+                        app:srcCompat="@drawable/construction"
+                        tools:ignore="ImageContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

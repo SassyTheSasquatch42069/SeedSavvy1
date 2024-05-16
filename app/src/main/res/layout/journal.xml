@@ -92,7 +92,7 @@
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:id="@+id/item_click"
+                        android:id="@+id/my_journal"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
@@ -124,7 +124,7 @@
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:id="@+id/item_click_2"
+                        android:id="@+id/add_journal"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_margin="16dp"
