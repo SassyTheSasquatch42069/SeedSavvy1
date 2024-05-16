@@ -111,34 +111,40 @@
                 android:text="@string/cat_img"
                 android:minHeight="48dp"
                 android:textColorHint="#546E7A" />
-            <!-- Date created -->
-            <EditText
-                android:id="@+id/seasons"
-                android:layout_width="300dp"
+
+            <!-- Seasons -->
+            <!-- Gender -->
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/item_season"
-                android:minHeight="48dp"
-                tools:ignore="TextContrastCheck"
-                android:inputType="text"
-                android:layout_margin="20dp"
-                android:layout_gravity="center"
-                android:textColorHint="#546E7A"
-                android:importantForAutofill="no"
-                android:textSize="25sp"/>
-            <!-- Date created -->
-            <EditText
-                android:id="@+id/climate"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/item_climate"
-                android:minHeight="48dp"
-                tools:ignore="TextContrastCheck"
-                android:inputType="text"
-                android:layout_margin="20dp"
-                android:layout_gravity="center"
-                android:textColorHint="#546E7A"
-                android:importantForAutofill="no"
-                android:textSize="25sp"/>
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/summer_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summer" />
+
+                <RadioButton
+                    android:id="@+id/autumn_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autumn" />
+
+                <RadioButton
+                    android:id="@+id/winter_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/winter" />
+
+                <RadioButton
+                    android:id="@+id/spring_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spring" />
+            </RadioGroup>
 
             <!-- Create Category Button -->
             <Button

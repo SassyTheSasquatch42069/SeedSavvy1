@@ -55,16 +55,23 @@
 
     <!--    Add Item-->
     <string name="item_header">Add Seed:</string>
-    <string name="item_name">Item Name</string>
+    <string name="item_name">Seed Name</string>
     <string name="item_description">Description</string>
     <string name="item_date">Date</string>
     <string name="item_season">Seasons</string>
+    <string name="summer">Summer</string>
+    <string name="winter">Spring</string>
+    <string name="autumn">Autumn</string>
+    <string name="spring">Winter</string>
     <string name="item_climate">Climate</string>
 
     <!--    View List-->
-    <string name="list_header">View List:</string>
+    <string name="list_header">View Seed List:</string>
     <string name="select_category">Select a Category</string>
     <string name="Search">search item:</string>
+    <string name="SeedName">Grow:</string>
+    <string name="SeedDesc">search item:</string>
+    <string name="SeedSeason">Grow Season:</string>
 
     <!--    Achievements-->
     <string name="achievements_header">Achievements:</string>

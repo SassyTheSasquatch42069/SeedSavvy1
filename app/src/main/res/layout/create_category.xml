@@ -105,25 +105,13 @@
                 android:importantForAutofill="no"
                 android:textSize="25sp"/>
 
-            <!-- Insert Image -->
-            <Button
-                android:id="@+id/category_Image"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="@color/black"
-                android:layout_margin="50dp"
-                android:text="@string/cat_img"
-                android:minHeight="48dp"
-                android:textColorHint="#546E7A" />
-
             <!-- Create Category Button -->
             <Button
                 android:id="@+id/create_cat_click"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="100dp"
                 android:backgroundTint="@color/Yellow"
                 android:minHeight="48dp"
                 android:text="@string/create_cat"
