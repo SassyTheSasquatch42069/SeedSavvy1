@@ -11,6 +11,9 @@ import androidx.appcompat.app.AppCompatActivity
 class CreateCategoryActivity : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var categoryNames: Array<String>
+    private lateinit var categoryGoals: Array<String>
+    private lateinit var categoryDates: Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,12 +33,11 @@ class CreateCategoryActivity : AppCompatActivity() {
             val categoryDate = categoryDateEditText.text.toString().trim()
 
             if (categoryName.isNotEmpty() && categoryGoal.isNotEmpty() && categoryDate.isNotEmpty()) {
+                // Save category details in arrays
+                saveCategoryDetails(categoryName, categoryGoal, categoryDate)
+
                 // Save category details in SharedPreferences
-                val editor = sharedPreferences.edit()
-                editor.putString("categoryName", categoryName)
-                editor.putString("categoryGoal", categoryGoal)
-                editor.putString("categoryDate", categoryDate)
-                editor.apply()
+                saveCategoryToSharedPreferences(categoryName, categoryGoal, categoryDate)
 
                 // Clear EditText fields
                 categoryNameEditText.text.clear()
@@ -50,5 +52,19 @@ class CreateCategoryActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             finish() // Close current activity and go back
         }
+    }
+
+    private fun saveCategoryDetails(name: String, goal: String, date: String) {
+        categoryNames += name
+        categoryGoals += goal
+        categoryDates += date
+    }
+
+    private fun saveCategoryToSharedPreferences(name: String, goal: String, date: String) {
+        val editor = sharedPreferences.edit()
+        editor.putString("categoryName", name)
+        editor.putString("categoryGoal", goal)
+        editor.putString("categoryDate", date)
+        editor.apply()
     }
 }
