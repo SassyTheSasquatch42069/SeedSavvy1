@@ -95,9 +95,12 @@
     <string name="category_tracker">Category Tracker</string>
     <string name="season_yield">Season Yield</string>
 
-    <!--    Coming Soon-->
+    <!--    Journal-->
     <string name="journal_header">Journal</string>
-    <string name="seasons_header">Season Tracker</string>
     <string name="my_journal">My Journal</string>
     <string name="add_journal">Add Journal</string>
+
+    <!--    Camera-->
+    <string name="camera_title">Camera</string>
+
 </resources>
