@@ -29,27 +29,28 @@ class MainMenuActivity : AppCompatActivity() {
         }
 
         imageViewAddItem.setOnClickListener {
-            setContentView(R.layout.add_item)
+            startActivity(Intent(this, AddItemActivity::class.java))
+
             finish()
         }
 
         imageViewViewList.setOnClickListener {
-            setContentView(R.layout.view_list)
+            startActivity(Intent(this, ViewListActivity::class.java))
             finish()
         }
 
         imageViewGoal.setOnClickListener {
-            setContentView(R.layout.goal)
+            startActivity(Intent(this, GoalActivity::class.java))
             finish()
         }
 
         imageViewAchievements.setOnClickListener {
-            setContentView(R.layout.achievement)
+            startActivity(Intent(this, AchievementActivity::class.java))
             finish()
         }
 
         imageViewSeasonsTracker.setOnClickListener {
-            setContentView(R.layout.seasons)
+            startActivity(Intent(this, SeasonsActivity::class.java))
             finish()
         }
 

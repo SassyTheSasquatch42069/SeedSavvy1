@@ -1,6 +1,7 @@
 package com.example.seed_savvy
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
@@ -38,11 +39,13 @@ class CreateCategoryActivity : AppCompatActivity() {
 
                 // Save category details in SharedPreferences
                 saveCategoryToSharedPreferences(categoryName, categoryGoal, categoryDate)
+                Toast.makeText(this, "Save successful", Toast.LENGTH_SHORT).show()
 
                 // Clear EditText fields
                 categoryNameEditText.text.clear()
                 categoryGoalEditText.text.clear()
                 categoryDateEditText.text.clear()
+                startActivity(Intent(this, MainMenuActivity::class.java))
             } else {
                 // Show error message if any field is empty
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
