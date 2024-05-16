@@ -25,33 +25,33 @@ class MainMenuActivity : AppCompatActivity() {
         // Set click listeners for each category to switch the content view
         imageViewCreateCategory.setOnClickListener {
             startActivity(Intent(this, CreateCategoryActivity::class.java))
-            finish()
+
         }
 
         imageViewAddItem.setOnClickListener {
             startActivity(Intent(this, AddItemActivity::class.java))
 
-            finish()
+
         }
 
         imageViewViewList.setOnClickListener {
             startActivity(Intent(this, ViewListActivity::class.java))
-            finish()
+
         }
 
         imageViewGoal.setOnClickListener {
             startActivity(Intent(this, GoalActivity::class.java))
-            finish()
+
         }
 
         imageViewAchievements.setOnClickListener {
             startActivity(Intent(this, AchievementActivity::class.java))
-            finish()
+
         }
 
         imageViewSeasonsTracker.setOnClickListener {
             startActivity(Intent(this, SeasonsActivity::class.java))
-            finish()
+
         }
 
 
