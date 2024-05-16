@@ -24,7 +24,7 @@
             android:padding="66dp">
 
             <TextView
-                android:id="@+id/editTextText"
+                android:id="@+id/create_category"
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -51,7 +51,7 @@
 
             <!-- Category Name -->
             <EditText
-                android:id="@+id/category_name_EditText"
+                android:id="@+id/category_name"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -68,7 +68,7 @@
             <!-- Category Goal -->
             <EditText
 
-                android:id="@+id/nameEditText"
+                android:id="@+id/category_goal"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/cat_goal"
@@ -82,7 +82,7 @@
 
             <!-- Date created -->
             <EditText
-                android:id="@+id/surnameEditText"
+                android:id="@+id/date_created"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/cate_date"
@@ -97,7 +97,7 @@
 
             <!-- Insert Image -->
             <Button
-                android:id="@+id/cat_img_click"
+                android:id="@+id/insert_image"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -106,7 +106,7 @@
                 android:text="@string/cat_img"
                 android:minHeight="48dp"
                 android:textColorHint="#546E7A" />
-            <!-- Insert Image -->
+
             <Button
                 android:id="@+id/create_cat_click"
                 android:layout_width="250dp"

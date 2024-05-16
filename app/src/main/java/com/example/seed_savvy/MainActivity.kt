@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                     // Login successful, navigate to homepage
                     Toast.makeText(this, "Login Successfully", Toast.LENGTH_LONG).show()
                     startActivity(Intent(this, MainMenuActivity::class.java))
+                    finish()
                 } else {
                     // Login failed, show error message or handle accordingly
                     Toast.makeText(this, "Invalid Username or Password", Toast.LENGTH_LONG).show()
