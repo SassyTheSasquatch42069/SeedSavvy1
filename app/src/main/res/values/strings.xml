@@ -54,7 +54,7 @@
     <string name="create_cat">Create Category</string>
 
     <!--    Add Item-->
-    <string name="item_header">Add Item:</string>
+    <string name="item_header">Add Seed:</string>
     <string name="item_name">Item Name</string>
     <string name="item_description">Description</string>
     <string name="item_date">Date</string>

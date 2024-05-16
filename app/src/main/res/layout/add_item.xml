@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -24,31 +24,35 @@
             android:orientation="vertical"
             android:padding="66dp">
 
-            <TextView
-                android:id="@+id/editTextText"
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="@string/item_header"
-                android:textSize="35sp"
-                tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/editTextText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:text="@string/item_header"
+                    android:textSize="35sp"
+                    tools:ignore="TextSizeCheck" />
         </LinearLayout>
     </ScrollView>
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="709dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <!-- Category Name -->
             <EditText
