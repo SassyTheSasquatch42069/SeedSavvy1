@@ -41,8 +41,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         createButton.setOnClickListener {
+
             // Navigate to registration page
             setContentView(R.layout.register)
+
         }
     }
 }

@@ -1,12 +1,12 @@
 package com.example.seed_savvy
+
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.RadioButton
-import androidx.activity.OnBackPressedCallback
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class RegisterActivity : AppCompatActivity() {
@@ -20,35 +20,24 @@ class RegisterActivity : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
 
         val usernameEditText = findViewById<EditText>(R.id.usernameEditText)
-        val nameEditText = findViewById<EditText>(R.id.nameEditText)
-        val surnameEditText = findViewById<EditText>(R.id.surnameEditText)
-        val password1EditText = findViewById<EditText>(R.id.password1)
-        val password2EditText = findViewById<EditText>(R.id.password2)
-        val ageEditText = findViewById<EditText>(R.id.ageEditText)
-        val maleRadioButton = findViewById<RadioButton>(R.id.maleRadioButton)
         val registerButton = findViewById<Button>(R.id.registerButton)
         val goBackButton = findViewById<Button>(R.id.goBackButton)
 
         registerButton.setOnClickListener {
             // Your registration logic
-            startActivity(Intent(this, MainActivity::class.java))
-            finish() // Optional: Close current activity
-        }
-
-        // Handling back button press using OnBackPressedCallback
-        val callback = object : OnBackPressedCallback(true /* enabled by default */) {
-            override fun handleOnBackPressed() {
-                // Navigate back to login page
-                startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
-                finish() // Optional: Close current activity
+            if (usernameEditText.text.trim().isNotEmpty()) {
+                Toast.makeText(this, "Username Entered Successfully", Toast.LENGTH_LONG).show()
+                startActivity(Intent(this, MainActivity::class.java))
+                finish() // Close current activity
+            } else {
+                Toast.makeText(this, "Enter a Username", Toast.LENGTH_LONG).show()
             }
         }
 
-        onBackPressedDispatcher.addCallback(this, callback)
+        goBackButton.setOnClickListener {
+            // Navigate back to login page
 
-        // Disable the callback if needed
-        // callback.isEnabled = false
+            finish() // Close current activity
+        }
     }
 }
-
-
