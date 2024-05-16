@@ -14,4 +14,5 @@
     <color name="achievements_header">#A125DB</color>
     <color name="goal_header">#F69400</color>
     <color name="season_header">#46AA6E</color>
+    <color name="journal_header">#C6E40B</color>
 </resources>
