@@ -42,19 +42,24 @@ class RegisterActivity : AppCompatActivity() {
                 && confirmPassword.isNotEmpty() && age.isNotEmpty()
             ) {
                 if (password == confirmPassword) {
-                    // Save user registration data to SharedPreferences
-                    with(sharedPreferences.edit()) {
-                        putString("username", username)
-                        putString("name", name)
-                        putString("surname", surname)
-                        putString("password", password)
-                        putString("age", age)
-                        putString("gender", gender)
-                        apply()
+                    if (isPasswordValid(password)) {
+                        // Save user registration data to SharedPreferences
+                        with(sharedPreferences.edit()) {
+                            putString("username", username)
+                            putString("name", name)
+                            putString("surname", surname)
+                            putString("password", password)
+                            putString("age", age)
+                            putString("gender", gender)
+                            apply()
+                        }
+                        Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
+                        // You can start MainActivity or perform registration logic here
+                        finish() // Close current activity
+                    } else {
+                        Toast.makeText(this, "Password does not meet the required criteria, please ensure that At least 12 characters long but 14 or more is better.\n" +
+                                "A combination of uppercase letters, lowercase letters, numbers, and symbols.", Toast.LENGTH_SHORT).show()
                     }
-                    Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
-                    // You can start MainActivity or perform registration logic here
-                    finish() // Close current activity
                 } else {
                     Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
                 }
@@ -68,5 +73,10 @@ class RegisterActivity : AppCompatActivity() {
             finish() // Close current activity
         }
     }
-}
 
+    private fun isPasswordValid(password: String): Boolean {
+        val minLength = 12
+        val pattern = Regex("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[!@#\$%^&*(),.?\":{}|<>]).{$minLength,}$")
+        return password.length >= minLength && password.matches(pattern)
+    }
+}

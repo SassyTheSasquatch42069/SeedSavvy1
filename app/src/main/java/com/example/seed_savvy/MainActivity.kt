@@ -1,5 +1,5 @@
 package com.example.seed_savvy
-// LoginActivity.kt
+
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -9,7 +9,6 @@ import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.seed_savvy.RegisterActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,14 +33,19 @@ class MainActivity : AppCompatActivity() {
             val enteredPassword = passwordEditText.text.toString()
 
             if (enteredUsername.isNotEmpty() && enteredPassword.isNotEmpty()) {
-                if (savedUsername == enteredUsername && savedPassword == enteredPassword) {
-                    // Login successful, navigate to homepage
-                    Toast.makeText(this, "Login Successfully", Toast.LENGTH_LONG).show()
-                    startActivity(Intent(this, MainMenuActivity::class.java))
-                    finish()
+                if (isPasswordValid(enteredPassword)) {
+                    if (savedUsername == enteredUsername && savedPassword == enteredPassword) {
+                        // Login successful, navigate to homepage
+                        Toast.makeText(this, "Login Successfully", Toast.LENGTH_LONG).show()
+                        startActivity(Intent(this, MainMenuActivity::class.java))
+                        finish()
+                    } else {
+                        // Login failed, show error message or handle accordingly
+                        Toast.makeText(this, "Invalid Username or Password", Toast.LENGTH_LONG).show()
+                    }
                 } else {
-                    // Login failed, show error message or handle accordingly
-                    Toast.makeText(this, "Invalid Username or Password", Toast.LENGTH_LONG).show()
+                    // Invalid password format
+                    Toast.makeText(this, "Password does not meet the required criteria", Toast.LENGTH_LONG).show()
                 }
             } else {
                 // Username or password is empty, show error message
@@ -49,15 +53,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-
         createButton.setOnClickListener {
-
-
             // Navigate to registration page
             startActivity(Intent(this, RegisterActivity::class.java))
-
         }
     }
-}
 
+    private fun isPasswordValid(password: String): Boolean {
+        val minLength = 12
+        val pattern = Regex("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[!@#\$%^&*(),.?\":{}|<>]).{$minLength,}$")
+        return password.length >= minLength && password.matches(pattern)
+    }
+}
